@@ -1,0 +1,7 @@
+﻿   Qt/MSBuild: 3.3.1.1
+   Qt: 6.8.2
+  rcc qml.qrc
+  qrc_qml.cpp
+  GardeningSolution.vcxproj -> C:\GardenProj\Gardening\GardeningSolution\x64\Debug\GardeningSolution.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
