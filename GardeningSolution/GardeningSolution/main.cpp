@@ -1,5 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+
+#include "ProfileData.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,6 +13,10 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    ProfileData profile("default_user");
+    engine.rootContext()->setContextProperty("profileData", &profile);
+
     engine.load(QUrl(QStringLiteral("qrc:/qt/qml/gardeningsolution/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;

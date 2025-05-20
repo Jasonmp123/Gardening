@@ -76,6 +76,11 @@ ApplicationWindow {
                     console.log("Date:", dateField.text)
                     console.log("Time:", timeField.text)
 
+                    // Call C++ methods to save data
+                    profileData.setEmail(emailField.text)
+                    profileData.setLocation(locationField.text)
+                    profileData.setDateTime(dateField.text, timeField.text)
+
                     appSettings.hasSeenSetup = true
                     stackView.replace(configScreenComponent)
                 }

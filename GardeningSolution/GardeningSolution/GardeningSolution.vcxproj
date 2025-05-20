@@ -93,9 +93,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Garden.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProfileData.cpp" />
+    <ClCompile Include="Relay.cpp" />
     <QtRcc Include="qml.qrc" />
     <None Include="main.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Garden.h" />
+    <ClInclude Include="ProfileData.h" />
+    <ClInclude Include="Relay.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
